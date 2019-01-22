@@ -36,10 +36,10 @@ namespace mongoDBLearn
                 monDoc = new BsonDocument
             {
                 {"nom","MoiMême" },
-                {"prenom","Rachid" },
-                {"age",40 }
+                {"prenom","Prenom" },
+                {"age",0 }
             };
-                monDoc.Add("profession", "archi");
+                monDoc.Add("profession", "none");
                 monDoc["adresse"] = "Paris";
                await col.InsertOneAsync(monDoc);
 
